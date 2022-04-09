@@ -1,0 +1,103 @@
+.body1 {
+    background: rgb(252,158,121);
+    background: radial-gradient(circle, rgba(252,158,121,0.7091211484593838) 28%, rgba(176,225,254,1) 87%);
+
+}
+.registration {
+    width:300px;
+    padding:20px;
+}
+
+.h4-colored{padding: 5px; color: #8e443a}
+
+.rounded-input {
+    padding:5px;
+    border-radius:1px;
+}
+.form1{width: 30%;
+display: inline-block;
+border-color: coral;
+    border-radius: 0 10px;;
+    margin: 5px;
+    padding:10px;
+   background: rgb(252,158,121);
+background: linear-gradient(30deg, rgba(252,158,121,0.30015756302521013) 10%, rgba(214,236,130,0.23853291316526615) 87%);;
+
+}
+
+.h6-colored{
+    color: #8e443a;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+}
+.reg_form {width: 500px;
+margin-left: auto;
+    margin-right: auto;
+    background-color: #fffce5;
+    padding: 20px;
+    border-radius: 2px;
+    margin-top: 150px}
+
+.inputer{
+   padding:10px;
+    border-radius:2px;
+    border-color: #8e433f;
+
+}
+input[type=range]  {
+    width: 220px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+  }
+   input[type=range]::-webkit-slider-runnable-track {
+      border-radius: 10px/100%;
+      height: 7px;
+	  border: 1px solid #8e433f;
+      background-color: #fff;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      background: #ecf0f1;
+      border: 1px solid #8e433f;
+      border-radius: 10px/100%;
+      cursor: pointer;
+      width:15px;
+      height: 15px;
+      -webkit-appearance: none;
+      margin-top: -4px;
+    }
+
+    input[type=range]::-moz-range-track {
+    	border-radius: 10px/100%;
+        height: 5px;
+    	border: 1px solid #8e433f;
+    	background-color: #fff;
+    }
+   input[type=range]::-moz-range-thumb {
+    	background: #ecf0f1;
+    	border: 1px solid #8e433f;
+        border-radius: 10px/100%;
+    	cursor: pointer;
+    }
+
+.Green {
+    background: green;
+    width: 130px;
+    height: 130px;
+    transition: .5s;
+}
+#inst:checked ~ .Green {
+    background: yellow;
+}
+
+.bi-suit-heart{
+    fill: #ffffff;
+    transition: 3s;
+}
+
+#like:checked ~ .bi-suit-heart{
+    fill: #ff193e
+}
+/*<input type="checkbox" class="btn-check" id="like" autocomplete="off"  value={{hiking.id}}>*/
+/*<label class="btn btn-danger" for="like">like</label>*/
+            /*<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi-suit-heart" viewBox="0 0 16 16">*/
+                /*<path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/></svg>*/
