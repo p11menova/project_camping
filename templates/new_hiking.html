@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New_hiking</title>
+    <link rel="stylesheet" href="../static/css_login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<body>
+<form method="post" class="reg_form">
+    <br>
+    <h4 class="h4-colored" style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif; text-align: center"> Создание нового похода</h4>
+    <h5 style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif; color:orangered">инструктор: {{ instructor_name }}</h5>
+    <div style="border-radius: 0 10px;  ">
+        <input type="text" name="hiking_name"  placeholder="название похода.." class='inputer'/>
+        &nbsp
+        <select name="type" required style="padding: 10px; background-color: #fff6e0; border-color: #8e443a">
+            <option value=Водный>Водный</option>
+            <option value=Пеший>Пеший</option>
+            <option value=Восхождение>Восхождение</option>]
+            <option value=Велосипедный>Велосипедный</option>
+            <option value=Мультитур>Мультитур</option>
+        </select> </div>
+    <br>
+    <input type="text" name="place"  placeholder="локация.." class="inputer"/>
+    <br>
+
+
+    <br>
+
+    <table border="1" width="100%" cellpadding="5">
+        <tr>
+            <th><label for="start_date" style="color: #9f9f9f; font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif">дата начала</label></th>
+            <th><label for="end_date" style="color: #9f9f9f; font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif" >дата конца</label></th>
+        </tr>
+        <tr>
+            <td><input type="date" id="start_date" name="hiking_start"
+                       min="2022-01-01" max="2030-12-31"/></td>
+            <td><input type="date" id="end_date" name="hiking_end"
+                       min="2022-01-02" max="2030-12-31"/>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <h5 STYLE="color: #9f9f9f; font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif">оцените сложность маршрута</h5>
+    <input type="range" min="1" max="5" step="1" id="difficulty" name="hiking_difficulty">
+    <pre> 1     2      3      4      5    </pre>
+
+
+        <h5 for="photo" style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif; color: #9f9f9f;">приложите фотографию</h5>
+        <input type="file" class="form-control-file" id="photo" name="image">
+
+    <br>
+    <br>
+    <button type="submit" class="btn btn-outline-danger btn-lg"   name="new_hiking">   Создать!   </button>
+
+</form>
+</body>
+</html>
