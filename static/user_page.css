@@ -1,0 +1,10 @@
+.form1{width: 30%;
+display: inline-block;
+border-color: coral;
+    border-radius: 0 10px;;
+    margin: 5px;
+    padding:10px;
+   background: rgb(121,252,235);
+background: linear-gradient(309deg, rgba(121,252,235,0.23573179271708689) 10%, rgba(214,236,130,0.23853291316526615) 87%);
+
+}
